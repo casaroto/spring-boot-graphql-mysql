@@ -1,0 +1,22 @@
+type Endereco {
+    enderecoUID:ID!
+    cep:Int!
+    logradouro:String!
+    numero:String!
+    bairro:String!
+    cidade:String!
+    uf:String!
+    seguradoUID:Int!
+}
+
+extend type Query {
+
+    findAllEndereco: [Endereco]!
+
+}
+
+extend type Mutation {
+
+    createEndereco(cep: Int!, logradouro: String!, numero: String!, bairro: String!, cidade: String!, uf: String!, seguradoUID: Int!): Endereco!
+
+}

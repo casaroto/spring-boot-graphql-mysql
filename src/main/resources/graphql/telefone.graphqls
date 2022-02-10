@@ -1,0 +1,18 @@
+type Telefone {
+    telefoneUID:ID!
+    numeroDDD:Int!
+    numeroTelefone:Int!
+    seguradoUID:Int!
+}
+
+extend type Query {
+
+    findAllTelefone: [Telefone]!
+
+}
+
+extend type Mutation {
+
+    createTelefone(numeroDDD:Int!, numeroTelefone:Int!, seguradoUID:Int!): Telefone!
+
+}

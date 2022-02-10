@@ -1,0 +1,20 @@
+type Segurado {
+    seguradoUID:ID!
+    nomeSegurado:String!
+    tipoPessoa:String!
+    cpfCnpj:String!,
+    dataNascimento:String!
+    email:String!
+}
+
+extend type Query {
+
+    findAllSegurado: [Segurado]!
+
+}
+
+extend type Mutation {
+
+    createSegurado(nomeSegurado: String!, tipoPessoa: String!, cpfCnpj: String!, dataNascimento: String!, email: String!): Segurado!
+
+}
