@@ -35,10 +35,10 @@ public class Mutation implements GraphQLMutationResolver {
 		return certificado;
 	}
 
-	public Apolice createApolice(String cia, String cpfCPJCorretor, Long certificadoUID) {
+	public Apolice createApolice(String cia, String cpfCnpjCorretor, Long certificadoUID) {
 		Apolice apoliceAuto = new Apolice();
 		apoliceAuto.setCia(cia);
-		apoliceAuto.setCpfCPJCorretor(cpfCPJCorretor);
+		apoliceAuto.setCpfCnpjCorretor(cpfCnpjCorretor);
 		apoliceAuto.setCertificadoUID(certificadoUID);
 
 		apoliceAutoRepository.save(apoliceAuto);

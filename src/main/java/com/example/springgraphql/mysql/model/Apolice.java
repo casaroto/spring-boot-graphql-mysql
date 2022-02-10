@@ -13,8 +13,8 @@ public class Apolice {
 	@Column(name = "cia", nullable = true)
 	private String cia;
 
-	@Column(name = "cpfCPJCorretor", nullable = true)
-	private String cpfCPJCorretor;
+	@Column(name = "cpfCnpjCorretor", nullable = true)
+	private String cpfCnpjCorretor;
 
 	@Column(name = "dataInicioVigencia", nullable = true)
 	private Date dataInicioVigencia;
@@ -80,12 +80,12 @@ public class Apolice {
 		this.cia = cia;
 	}
 
-	public String getCpfCPJCorretor() {
-		return cpfCPJCorretor;
+	public String getCpfCnpjCorretor() {
+		return cpfCnpjCorretor;
 	}
 
-	public void setCpfCPJCorretor(String cpfCPJCorretor) {
-		this.cpfCPJCorretor = cpfCPJCorretor;
+	public void setCpfCnpjCorretor(String cpfCnpjCorretor) {
+		this.cpfCnpjCorretor = cpfCnpjCorretor;
 	}
 
 	public Date getDataInicioVigencia() {
